@@ -1,0 +1,29 @@
+1. Install Tailwind CSS with Vite
+2. Editor Setup
+ + IntelliSense for VS Code : cung cấp cho người dùng các tính năng nâng cao như tự động hoàn thành, đánh dấu cú pháp và linting.
+ + Automatic class sorting with Prettier : : tự động fomat các class theo mức độ ưu tiên class quan trọng sắp xếp trước
+3. Optimizing for Production:
+Tận dụng tối đa hiệu suất của các dự án CSS Tailwind.
+
+-CSS Tailwind cực kỳ tập trung vào hiệu suất và nhằm mục đích tạo ra "tệp" CSS nhỏ nhất có thể, bằng cách chỉ tạo CSS, mà bạn thực sự đang sử dụng trong dự án của mình. 
+
+- kết hợp với sự nhỏ gọn và nén trong mạng, điều này thường  dẫn đến Css file ít hơn 10 kb, thâm chí cho cho các dự án lớn , DỰ án Netflĩ sử dụng Tailwind cho Netflix top 10 ,và toàn bộ website chỉ 6.5kb của css qua network.
+
+- với tệp css nhỏ như thế này , mày không cần lo lắng về  giải pháp phức tạp như tách mã CSS của mày thành mỗi page,  và có thể thay vào đó chỉ gửi vào 1 tệp  css nhỏ, điều này được tải xuống 1 lần và được cached( lưu vào)  vào bộ nhớ đệm cho đến khi bạn deploy lại site( trang websize) của bạn
+
+4. Browser Support
+- Hiểu biết browsers nào , Tailwind hỗ trợ và cách manage tiền tố của nhà cung cấp
+  ví dụ : -webkit-: Được sử dụng bởi trình duyệt WebKit như Safari và Chrome trên nền tảng macOS và iOS.
+- Trong sự tổng quan ., tailwind css version   3.0 được thiết kế và kiểm thử trên các phiên bản chrome ổn định mới nhất của chrome.
+Vendor Prefixes ( nhà cugn cấp tiền tố )
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+🩸
+
+
